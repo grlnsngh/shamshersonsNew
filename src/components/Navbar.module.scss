@@ -1,0 +1,73 @@
+@use "../styles/colors.module.scss" as colors;
+
+.nav {
+  background-color: colors.$primary; /* Light gray background */  
+  padding: 1rem 2rem; /* Add some padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space between items */
+  color: colors.$white;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      
+
+      li {
+        list-style: none;
+        text-decoration: none;
+        
+        
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-end; /* Align to the right */
+    gap: 10px; /* Space between icons */
+
+    .socialIcon {
+      color: colors.$white;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: colors.$accent;
+      }
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  a {
+    
+    text-decoration: none;
+    color: colors.$white;
+    padding: 0px;
+    transition: color 0.3s ease; /* Add transition to color change */
+    &:hover {
+      color: colors.$accent; /* Change text color to blue on hover */
+      transition: color 0.3s ease;
+    }
+    &.active{
+      color: colors.$accent;
+    }
+  }
+}

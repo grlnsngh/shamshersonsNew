@@ -1,0 +1,56 @@
+@use "../styles/colors.module.scss" as colors;
+
+.container {
+  position: relative;
+  text-align: center;
+  height: 100vh;  
+  padding: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    border-radius: 30px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+    pointer-events: none;
+  } 
+}
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+
+  padding: 0 20px;  
+  z-index: 2;
+}
+
+.headline {
+  font-size: 3rem;
+}
+
+.subheadline {
+  color: white;
+}
+
+.button{
+  color: white;
+  background-color: colors.$accent;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  &:hover {
+    background-color: colors.$accentDark;
+  }
+
+}
