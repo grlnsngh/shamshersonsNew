@@ -1,6 +1,24 @@
-# React + TypeScript + Vite
+# Piano Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a website dedicated to pianos. It's built using React, TypeScript, and Vite, offering a modern and interactive user experience.
+
+## Features
+
+The website includes several key components:
+
+-   **Header:** A prominent header section for site navigation and branding.
+-   **Footer:** A footer section containing important links and copyright information.
+-   **Navbar:** A navigation bar for easy access to different parts of the website.
+-   **Multiple Pages:** The website features several pages, such as:
+    -   **About Page:** Provides information about the website and its purpose.
+    -   **Contact Page:** Allows users to get in touch with the site owners.
+    -   **Enquiry Page:** Enables users to submit inquiries or requests.
+
+This website is hosted at https://grlnsngh.github.io/shamshersonsNew/
+
+## Development Setup
+
+This project utilizes a modern setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
